@@ -1,6 +1,6 @@
 from random import randint
 from random import randrange
-#
+
 # list1 = []
 #
 # length = int(input("Введите размер листа ", ))
@@ -45,24 +45,24 @@ from random import randrange
 #     for i in range(a, b + 1, -1):
 #         print(i)
 
-# print(f"Третья задача")
-#
-# a = int(input("Введите A ",))
-# b = int(input("Введите B ",))
-#
-# while (a <= b):
-#     print(f"А должно быть больше В")
-#     a = int(input("Введите A ", ))
-#     b = int(input("Введите B ", ))
-#
-# for i in range(a + 1, b - 1, -1):
-#     print(i) if i % 2 != 0 else ""
+print(f"Третья задача")
 
-print(f"Четвертая задача")
+a = int(input("Введите A ",))
+b = int(input("Введите B ",))
 
-n = int(input("Введите количество карт",))
-expectedSum = (n + 1) * n // 2
-actualSum = 0
-for i in range(n - 1):
-    actualSum += int(input())
-print(f"Пропущенное число это{expectedSum - actualSum}")
+while (a <= b):
+    print(f"А должно быть больше В")
+    a = int(input("Введите A ", ))
+    b = int(input("Введите B ", ))
+d = a % 2 + a + 1
+for i in range(d - 2, b - 1, -2):
+    print(i)
+
+# print(f"Четвертая задача")
+#
+# n = int(input("Введите количество карт ",))
+# expectedSum = (n + 1) * n // 2
+# actualSum = 0
+# for i in range(n - 1):
+#     actualSum += int(input())
+# print(f"Пропущенное число это {expectedSum - actualSum}")
