@@ -73,11 +73,11 @@
 
 
 
-a = str(input("Введите первое число",))
-b = str(input("Введите второе число",))
-
-while(not a.isdigit() or not b.isdigit()):
-  a = str(input("Введите первое число", ))
-  b = str(input("Введите второе число", ))
-
-print(int(a) + int(b))
+# a = str(input("Введите первое число",))
+# b = str(input("Введите второе число",))
+#
+# while(not a.isdigit() or not b.isdigit()):
+#   a = str(input("Введите первое число", ))
+#   b = str(input("Введите второе число", ))
+#
+# print(int(a) + int(b))

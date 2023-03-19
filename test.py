@@ -28,6 +28,7 @@ history = model.fit(train_data, train_labels, batch_size=32, epochs=100, validat
 
 # Evaluate the model
 test_loss, test_accuracy = model.evaluate(test_data, test_labels)
+model.save("my_model.h5")
 print("Test Loss:", test_loss)
 print("Test Accuracy:", test_accuracy)
 
@@ -47,9 +48,10 @@ def predict_survival(model, Pclass, Sex, Age):
         print(prediction)
         return "Survived"
     else:
+        print(prediction)
         return "Not Survived"
 
 
 # Example usage
-result = predict_survival(model, 1, "male", 5)
+result = predict_survival(model, 3, "male", 40)
 print(result)
