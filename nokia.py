@@ -63,7 +63,7 @@ def gameLoop():
     # Создание пустого списка для хранения координат блоков змеи
     snake_List = []
     # Установка начальной длины змеи равной 1 блоку
-    Length_of_snake = 2
+    Length_of_snake = 1
 
     # Произвольная установка положения ягоды на дисплее
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
